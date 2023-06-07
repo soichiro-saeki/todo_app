@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   get '/todos', to: 'todos#index'
   root to: 'todos#index'
   resources :todos
+
+  namespace :api do
+    resources :todos, only: [:index]
+  end
 end
