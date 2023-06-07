@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get '/todos', to: 'todos#index'
   root to: 'todos#index'
-  resources :todos, only: [:index, :new, :create]
+  resources :todos
 end

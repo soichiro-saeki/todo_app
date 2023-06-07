@@ -87,6 +87,12 @@ td {
   background-color: #DC3545;
 }
 
+.delete-button {
+  /* スタイルを定義 */
+  background-color: red;
+  color: white;
+}
+
 .new-task {
   display: inline-block;
   margin-bottom: 20px;

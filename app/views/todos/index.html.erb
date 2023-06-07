@@ -12,13 +12,16 @@
     </thead>
     <tbody>
       <!-- ここは後から動的コンテンツに置き換える -->
+      <% @todos.each do |todo|%>
       <tr>
-        <td>サンプルタスク</td>
+        <td><%= todo.title %></td>
         <td>
-          <a class="edit" href="#">編集</a>
-          <a class="delete" href="#">削除</a>
+          <a class="edit" href="<%= edit_todo_path(todo) %>">編集</a>
+        <%= button_to '削除', todo, method: :delete, data: { confirm: '本当に削除していいですか?' }, class: 'delete-button' %>
+
         </td>
       </tr>
+      <% end %>
     </tbody>
   </table>
 </div>
