@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   resources :todos
 
   namespace :api do
-    resources :todos, only: [:index]
+    resources :todos
   end
 end
