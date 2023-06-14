@@ -73,3 +73,5 @@ end
 
 gem 'jquery-rails'
 gem 'webpacker'
+gem 'jwt'
+gem 'bcrypt'
